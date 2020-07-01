@@ -1,1 +1,21 @@
-<mat-slider (input)="onInputChange($event)" min="1" max="1000" step="1" value="1" ></mat-slider>
+<div style="display: flex ">
+
+
+
+<div >
+        <mat-slider (input)="onInputChange($event)" min="1" max="1000" step="1" value="1" ></mat-slider>
+
+
+</div>
+
+<div>
+
+        <mat-icon [ngStyle]="{'font-size': srv.sliderValue + 'px'}" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+
+</div>
+</div>
+
+
+
+  

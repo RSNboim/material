@@ -1,1 +1,27 @@
-<p>c4 works!</p>
+<div class="header" style="display: flex;  justify-content: center;
+"> 
+    <h1>material </h1><br><br><br>
+    <h2>makes your site</h2>
+</div>
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+
+
+    <button mat-menu-item routerLink ="/pets_albume">
+        <mat-icon>pets</mat-icon>
+        <span>pets albume</span>
+    </button>
+    <button mat-menu-item  routerLink ="/pests_albume">
+        <mat-icon>pest_control_rodent</mat-icon>
+        <span>pests albume</span>
+    </button>
+    <button mat-menu-item  routerLink ="/increasing_home">
+        <mat-icon>home</mat-icon>
+        <span>ctrl home size</span>
+    </button>
+</mat-menu>
+
+
+<router-outlet></router-outlet>
